@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="favicon.png" type="image/x-icon">
+    <title>Clase</title>
+</head>
+<body>
+    <h1>Clase 2 - Favicon - Inline Block - Canvas</h1>
+
+    <h2>Inline y Block</h2>
+
+    <div style="background-color: coral;">Soy un elemento en bloque</div>
+
+    <span style="background-color: blueviolet;">Soy una etiquetta Span - Inline</span>
+    <span style="background-color: blueviolet;">Soy una etiquetta Span - Inline</span>
+    <span style="background-color: blueviolet;">Soy una etiquetta Span - Inline</span>
+
+    <!--Canvas-->
+    <section>
+        <h2>Canvas</h2>
+
+        <canvas id="miCanvas" width="300" height="150" style="border: 1px solid tomato">
+            Tu navegador no soporta Canvas
+        </canvas>
+    </section>
+    <script>
+        //Variables para obtener el id
+        var canvas = document.getElementById
+        ("miCanvas");
+
+        //Variable para el contexto
+        var ctx = canvas.getContext("2d");
+
+        //Dibujar dentro de canvas
+        ctx.fillStyle="green";
+        ctx.fillRect(20,20,100,50);
+
+        //Dibujar 2 cajas
+        ctx.strokeStyle = "blue";
+        ctx.strokeRect(100,100,100,50);
+
+        //Escribir un texto
+        ctx.font = "16px Arial";
+        ctx.fillStyle= "green";
+        ctx.fillText("Hola DuocUC",80,120);
+    </script>
+    
+</body>
+</html>
